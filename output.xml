@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.5 on win32)" generated="20211125 15:05:50.123" rpa="false" schemaversion="2">
+<suite id="s1" name="Test02" source="D:\Robot-Demo\test02.robot">
+<test id="s1-t1" name="Open application via emulator Text/LogTextBox">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>deviceName="emulator-5554"</arg>
+<arg>platformVersion=${ANDROID_PLATFORM_VERSION}</arg>
+<arg>app=${ANDROID_APP}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211125 15:05:50.545" endtime="20211125 15:06:15.762"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>android:id/button1</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211125 15:06:15.768" level="INFO">Clicking element 'android:id/button1'.</msg>
+<status status="PASS" starttime="20211125 15:06:15.764" endtime="20211125 15:06:16.868"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Text</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20211125 15:06:16.869" endtime="20211125 15:06:19.321"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.ListView/android.widget.TextView[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211125 15:06:19.328" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.ListView/android.widget.TextView[2]'.</msg>
+<status status="PASS" starttime="20211125 15:06:19.323" endtime="20211125 15:06:20.605"/>
+</kw>
+<kw name="Element Name Should Be" library="AppiumLibrary">
+<arg>com.hmh.api:id/add</arg>
+<arg>Add</arg>
+<msg timestamp="20211125 15:06:20.692" level="INFO">Element 'com.hmh.api:id/add' name is 'Add' </msg>
+<status status="PASS" starttime="20211125 15:06:20.606" endtime="20211125 15:06:20.692"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>com.hmh.api:id/add</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211125 15:06:20.698" level="INFO">Clicking element 'com.hmh.api:id/add'.</msg>
+<status status="PASS" starttime="20211125 15:06:20.693" endtime="20211125 15:06:20.799"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>This is a test</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20211125 15:06:20.966" level="INFO">Current page contains text 'This is a test'.</msg>
+<status status="PASS" starttime="20211125 15:06:20.800" endtime="20211125 15:06:20.967"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211125 15:06:23.974" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211125 15:06:20.967" endtime="20211125 15:06:23.974"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211125 15:06:23.975" endtime="20211125 15:06:25.517"/>
+</kw>
+<status status="PASS" starttime="20211125 15:05:50.544" endtime="20211125 15:06:25.520"/>
+</test>
+<status status="PASS" starttime="20211125 15:05:50.127" endtime="20211125 15:06:25.525"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test02">Test02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
